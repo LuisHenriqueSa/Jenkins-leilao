@@ -3,6 +3,7 @@ package br.com.alura.leilao.model;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,7 +14,9 @@ import javax.persistence.OneToOne;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
 
-@org.hibernate.annotations.Entity
+
+
+@Entity
 public class Lance {
 
 	@Id
